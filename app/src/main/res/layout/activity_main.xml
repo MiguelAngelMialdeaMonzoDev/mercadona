@@ -22,17 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            app:titleTextColor="@color/green_mercadona"
+            android:elevation="12dp"
             app:title="@string/toolbar_main_title"
-            android:elevation="12dp">
+            app:titleTextColor="@color/green_mercadona">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_marginEnd="20dp"
-                android:padding="10dp"
                 android:onClick="@{() -> activity.goToAddProduct()}"
+                android:padding="10dp"
                 android:src="@drawable/ic_add_24" />
         </androidx.appcompat.widget.Toolbar>
 

@@ -124,8 +124,8 @@ class MainActivity : AppCompatActivity() {
 
             override fun onQueryTextChange(newText: String?): Boolean {
                 if (!newText.isNullOrEmpty()) {
-                    val listFiltered = viewModel.productsList.value?.filter { coin ->
-                        coin.name?.lowercase()?.contains(newText.lowercase()) == true
+                    val listFiltered = viewModel.productsList.value?.filter { product ->
+                        product.name?.lowercase()?.contains(newText.lowercase()) == true
                     }
                     productsAdapter.submitList(listFiltered)
                 } else {
@@ -201,7 +201,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun goToAddProduct() {
-
         responseLauncher.launch(Intent(this, AddProductActivity::class.java))
     }
 
