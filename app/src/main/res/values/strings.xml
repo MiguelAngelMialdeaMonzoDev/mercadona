@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">mercadona</string>
+    <string name="app_name">Prueba Mercadona</string>
 
     <!-- COMMON DATA -->
     <string name="empty_field">Este campo no puede estar vacío.</string>
