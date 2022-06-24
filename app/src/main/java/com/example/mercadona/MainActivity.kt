@@ -180,6 +180,7 @@ class MainActivity : AppCompatActivity() {
         }
         Glide.with(binding.root.context)
             .load(item.image)
+            .placeholder(R.drawable.img_placeholder)
             .encodeQuality(100)
             .into(imageProduct)
     }
